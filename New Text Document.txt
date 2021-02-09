@@ -1,0 +1,3 @@
+url: https://localhost:44357/Identity/Account/RegisterForAdmin
+gurlalsingh1@gmail.com
+Gurlal@13
