@@ -9,18 +9,18 @@ namespace Zovi_Fashion.Models
 {
     public class Studio
     {
-        [Key]
+        [Key]                                               //Primary Key
         public int StudioID { get; set; }
 
         [Required]
-        [StringLength(100)]
+        [StringLength(100)]                                             //String length used is 100
         public string Title { get; set; }
 
         [Required]
-        [StringLength(1000)]
+        [StringLength(1000)]                                    //Required
         public string StudioDesc { get; set; }
 
-        public DateTime PostDate { get; set; }
+        public DateTime PostDate { get; set; }                                  //when is posted
 
         [Required]
         [StringLength(20)]

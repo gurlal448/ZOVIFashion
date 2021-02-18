@@ -8,24 +8,24 @@ namespace Zovi_Fashion.Models
 {
     public class ProductReview
     {
-        [Key]
+        [Key]                                                   //Primary key
         public int ReviewID { get; set; }
 
-        [Required]
+        [Required]                                                      //Required
         [StringLength(100)]
         public string Name { get; set; }
 
         [Required]
-        public int Rating { get; set; }
+        public int Rating { get; set; }                                            //Rating of product
 
         [Required]
         [StringLength(1000)]
-        public string ReviewText { get; set; }
+        public string ReviewText { get; set; }                                      //Review of product
 
         [Required]
-        public int ProductID { get; set; }
+        public int ProductID { get; set; }                                      //Product id foreign key
 
-        public Product Product { get; set; }
+        public Product Product { get; set; }                                                
 
         public DateTime ReviewDate { get; set; }
 

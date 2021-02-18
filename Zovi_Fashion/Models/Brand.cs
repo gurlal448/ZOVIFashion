@@ -8,11 +8,11 @@ namespace Zovi_Fashion.Models
 {
     public class Brand
     {
-        [Key]
+        [Key]               //Primary key used for Brand
         public int BrandID { get; set; }
 
         [Required]
-        [StringLength(100)]
+        [StringLength(100)]                 //String Length
         public string BrandName { get; set; }
 
         public virtual ICollection<Product> BrandProducts { get; set; }
